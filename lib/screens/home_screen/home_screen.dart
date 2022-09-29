@@ -8,26 +8,26 @@ class HomeScreen extends StatefulWidget {
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin{
-   TabController? _tabController;
+class _HomeScreenState extends State<HomeScreen>{
+   // TabController? _tabController;
    // static const List<Tab> myTabs = <Tab>[
    //   Tab(text: 'Dining'),
    //   Tab(text: 'PickUp'),
    // ];
-   @override
-   void initState() {
-     super.initState();
-     _tabController = TabController(vsync: this, length: 2);
-   }
-   @override
-   void dispose() {
-     _tabController!.dispose();
-     super.dispose();
-   }
+   // @override
+   // void initState() {
+   //   super.initState();
+   //   _tabController = TabController(vsync: this, length: 2);
+   // }
+   // @override
+   // void dispose() {
+   //   _tabController!.dispose();
+   //   super.dispose();
+   // }
    @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      appBar: PreferredSize(
+      appBar:  PreferredSize(
           preferredSize: Size.fromHeight(170),
           child: CustomAppBar()),
 
