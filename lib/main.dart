@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dash_app/screens/widget/custom_app_bar.dart';
+import 'package:flutter_dash_app/screens/allergy_and_information/interested.dart';
+import 'package:flutter_dash_app/screens/home_screen/home_screen.dart';
+import 'package:flutter_dash_app/screens/splash_screen.dart';
+// import 'package:flutter_dash_app/screens/widget/custom_app_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,11 +16,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Dash App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:  const CustomAppBar(),
+      home:  const SplashScreen(),
     );
   }
 }

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dash_app/screens/allergy_and_information/interested.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import '../home_screen/home_screen.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({Key? key}) : super(key: key);
@@ -178,6 +181,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                   height: 15,
                                 ),
                                 GestureDetector(
+                                  onTap: () {
+                                    Navigator.pushReplacement(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                const InterestedThing()));
+                                  },
                                   child: Container(
                                     alignment: Alignment.center,
                                     width:
