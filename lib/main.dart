@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dash_app/screens/allergy_and_information/allergy_information.dart';
 import 'package:flutter_dash_app/screens/allergy_and_information/interested.dart';
 import 'package:flutter_dash_app/screens/home_screen/home_screen.dart';
 import 'package:flutter_dash_app/screens/splash_screen.dart';

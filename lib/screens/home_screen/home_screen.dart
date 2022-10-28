@@ -13,13 +13,13 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
   @override
-  Widget build(BuildContext context)=> DefaultTabController(
+  Widget build(BuildContext context) => DefaultTabController(
       length: 2,
       child: Scaffold(
           resizeToAvoidBottomInset: false,
           appBar: AppBar(
+            automaticallyImplyLeading: false,
             title: Row(
               children: <Widget>[
                 Column(
@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     Text(
                       "Hello Alexa 👏",
                       style:
-                      TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
                     ),
                     Text(
                       "Eat right! Be tight!",
@@ -40,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             titleSpacing: 17,
             toolbarHeight: 120,
-            backgroundColor: Colors.orange,
+            backgroundColor: Colors.redAccent,
             bottom: const TabBar(
               indicatorColor: Colors.white,
               indicatorWeight: 3.0,
@@ -64,40 +64,33 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: const EdgeInsets.only(top: 40, right: 15),
                 child: Stack(
                   children: [
-                    Positioned(
-                      child: Container(
-                        height: 30,
-                        width: 30,
-                        decoration: BoxDecoration(
-                            color: Colors.orange,
-                            borderRadius: BorderRadius.circular(20),
-                            border: Border.all(color: Colors.white)),
-                        child: const Icon(
-                          Icons.notifications_none_outlined,
-                          color: Colors.white,
-
-                          //     Border.all(color: Colors.black)
-                        ),
+                    Container(
+                      width: 37,
+                      height: 37,
+                      decoration: BoxDecoration(
+                        color: Colors.redAccent,
+                        shape: BoxShape.circle,
+                        border: Border.all(color: Colors.white),
                       ),
+                      child: Icon(Icons.notifications_none_outlined),
                     ),
                     Positioned(
-                        left: 14,
-                        child: Container(
+                      left: 20,
+                      child: Container(
                           alignment: Alignment.topRight,
-                          height: 16,
                           width: 16,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                            border: Border.all(color: Colors.white),
-                          ),
+                          height: 16,
+                          decoration: const BoxDecoration(
+                              shape: BoxShape.circle, color: Colors.white),
                           child: const Center(
-                              child: Text(
-                                "1",
-                                style:
-                                TextStyle(color: Colors.orange, fontSize: 12),
-                              )),
-                        ))
+                            child: Text(
+                              '1',
+                              style: TextStyle(
+                                  fontSize: 12,
+                                  color: Color.fromRGBO(254, 118, 95, 1)),
+                            ),
+                          )),
+                    )
                   ],
                 ),
               )
@@ -195,7 +188,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   color: Colors.white),
                               child: Row(
                                 mainAxisAlignment:
-                                MainAxisAlignment.spaceEvenly,
+                                    MainAxisAlignment.spaceEvenly,
                                 children: const [
                                   Icon(Icons.location_on_outlined, size: 14),
                                   Text(
@@ -302,7 +295,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Text(
                       'Mood for… ',
                       style:
-                      TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
                   ),
                   const CircularList(),
@@ -418,7 +411,7 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 54,
               width: 54,
               decoration: BoxDecoration(
-                color: Colors.orange,
+                color: Colors.redAccent,
                 shape: BoxShape.circle,
                 boxShadow: [
                   BoxShadow(
@@ -436,211 +429,92 @@ class _HomeScreenState extends State<HomeScreen> {
             onPressed: () => {},
           ),
           floatingActionButtonLocation:
-          FloatingActionButtonLocation.centerDocked,
+              FloatingActionButtonLocation.centerDocked,
           bottomNavigationBar: BottomAppBar(
-            // shape: const CircularNotchedRectangle(),
-            // notchMargin: 20,
+              // shape: const CircularNotchedRectangle(),
+              // notchMargin: 20,
               child: Container(
-                height: 60,
-                decoration: const BoxDecoration(
-                  color: Colors.white,
+            height: 60,
+            decoration: const BoxDecoration(
+              color: Colors.white,
+            ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                MaterialButton(
+                  minWidth: 40,
+                  onPressed: () => {},
+                  child: Column(
+                    children: const [
+                      Icon(
+                        Icons.home_outlined,
+                        color: Colors.redAccent,
+                        size: 40,
+                      ),
+                      Text(
+                        "Home",
+                        style: TextStyle(color: Colors.redAccent),
+                      )
+                    ],
+                  ),
                 ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    MaterialButton(
-                      minWidth: 40,
-                      onPressed: () => {},
-                      child: Column(
-                        children: const [
-                          Icon(
-                            Icons.home_outlined,
-                            color: Colors.orange,
-                            size: 40,
-                          ),
-                          Text(
-                            "Home",
-                            style: TextStyle(color: Colors.orange),
-                          )
-                        ],
+                MaterialButton(
+                  minWidth: 80,
+                  onPressed: () => {},
+                  child: Column(
+                    children: const [
+                      Icon(
+                        Icons.search_outlined,
+                        color: Colors.redAccent,
+                        size: 40,
                       ),
-                    ),
-                    MaterialButton(
-                      minWidth: 80,
-                      onPressed: () => {},
-                      child: Column(
-                        children: const [
-                          Icon(
-                            Icons.search_outlined,
-                            color: Colors.grey,
-                            size: 40,
-                          ),
-                          Text(
-                            "Explore",
-                            style: TextStyle(color: Colors.grey),
-                          )
-                        ],
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    MaterialButton(
-                      minWidth: 80,
-                      onPressed: () => {},
-                      child: Column(
-                        children: const [
-                          Icon(
-                            Icons.book_outlined,
-                            color: Colors.grey,
-                            size: 40,
-                          ),
-                          Text(
-                            "Booking",
-                            style: TextStyle(color: Colors.grey),
-                          )
-                        ],
-                      ),
-                    ),
-                    MaterialButton(
-                      minWidth: 80,
-                      onPressed: () => {},
-                      child: Column(
-                        children: const [
-                          Icon(
-                            Icons.person_outline,
-                            color: Colors.grey,
-                            size: 40,
-                          ),
-                          Text(
-                            "Account",
-                            style: TextStyle(color: Colors.grey),
-                          )
-                        ],
-                      ),
-                    )
-                  ],
+                      Text(
+                        "Explore",
+                        style: TextStyle(color: Colors.redAccent),
+                      )
+                    ],
+                  ),
                 ),
-              ))));
-  // getBody() {
-  //   var size = MediaQuery.of(context).size;
-  //   return SingleChildScrollView(
-  //     child: Container(
-  //       width: MediaQuery.of(context).size.width,
-  //       height: 129,
-  //       decoration: const BoxDecoration(color: Colors.redAccent),
-  //       child: Column(
-  //         children: [
-  //           Padding(
-  //             padding: const EdgeInsets.only(top: 10, left: 15, right: 15),
-  //             child: Row(
-  //               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-  //               children: [
-  //                 const Text(
-  //                   'Hello Alexa 👋',
-  //                   style: TextStyle(
-  //                       color: Colors.white,
-  //                       fontSize: 26,
-  //                       fontWeight: FontWeight.bold),
-  //                 ),
-  //                 Container(
-  //                   width: 45,
-  //                   height: 52,
-  //                   decoration: BoxDecoration(
-  //                       shape: BoxShape.circle,
-  //                       border: Border.all(color: Colors.white)),
-  //                   child: Stack(
-  //                     children: [
-  //                       const Center(
-  //                         child: Icon(
-  //                           Icons.notifications_none_outlined,
-  //                           color: Colors.white,
-  //                         ),
-  //                       ),
-  //                       Positioned(
-  //                         left: 24,
-  //                         bottom: 34,
-  //                         child: Container(
-  //                           alignment: Alignment.topRight,
-  //                           width: 16,
-  //                           height: 16,
-  //                           decoration: const BoxDecoration(
-  //                               shape: BoxShape.circle, color: Colors.white),
-  //                           child: const Center(
-  //                             child: Text(
-  //                               '1',
-  //                               style: TextStyle(
-  //                                   fontSize: 12,
-  //                                   color: Color.fromRGBO(254, 118, 95, 1)),
-  //                             ),
-  //                           ),
-  //                         ),
-  //                       ),
-  //                     ],
-  //                   ),
-  //                 )
-  //               ],
-  //             ),
-  //           ),
-  //           Padding(
-  //             padding: const EdgeInsets.only(left: 15, right: 15),
-  //             child: Row(
-  //               children: const [
-  //                 Text(
-  //                   'Eat right! Be tight',
-  //                   style: TextStyle(
-  //                       fontSize: 14, color: Color.fromRGBO(255, 230, 226, 1)),
-  //                 ),
-  //               ],
-  //             ),
-  //           ),
-  //           Padding(
-  //             padding: const EdgeInsets.only(left: 25),
-  //             child: Row(
-  //               children: const [
-  //                 DefaultTabController(
-  //                   initialIndex: 0,
-  //                   length: 1,
-  //                   child: TabBar(
-  //                     isScrollable: true,
-  //                     indicatorColor: Colors.white,
-  //                     indicatorSize: TabBarIndicatorSize.tab,
-  //                     tabs: [
-  //                       Tab(
-  //                         child: Text(
-  //                           'Dining',
-  //                           style: TextStyle(fontWeight: FontWeight.bold),
-  //                         ),
-  //                       ),
-  //                     ],
-  //                   ),
-  //                 ),
-  //               ],
-  //             ),
-  //           ),
-  //           const SizedBox(
-  //             height: 10,
-  //           ),
-  //           TextField(
-  //             decoration: InputDecoration(
-  //               icon: new Icon(Icons.search),
-  //               labelText: "Describe Your Issue...",
-  //               enabledBorder: const OutlineInputBorder(
-  //                 borderRadius: BorderRadius.all(Radius.circular(20.0)),
-  //                 borderSide: const BorderSide(
-  //                   color: Colors.grey,
-  //                 ),
-  //               ),
-  //               focusedBorder: OutlineInputBorder(
-  //                 borderRadius: BorderRadius.all(Radius.circular(10.0)),
-  //                 borderSide: BorderSide(color: Colors.blue),
-  //               ),
-  //             ),
-  //           ),
-  //         ],
-  //       ),
-  //     ),
-  //   );
-  // }
+                const SizedBox(
+                  width: 10,
+                ),
+                MaterialButton(
+                  minWidth: 80,
+                  onPressed: () => {},
+                  child: Column(
+                    children: const [
+                      Icon(
+                        Icons.book_outlined,
+                        color: Colors.redAccent,
+                        size: 40,
+                      ),
+                      Text(
+                        "Booking",
+                        style: TextStyle(color: Colors.redAccent),
+                      )
+                    ],
+                  ),
+                ),
+                MaterialButton(
+                  minWidth: 80,
+                  onPressed: () => {},
+                  child: Column(
+                    children: const [
+                      Icon(
+                        Icons.person_outline,
+                        color: Colors.redAccent,
+                        size: 40,
+                      ),
+                      Text(
+                        "Account",
+                        style: TextStyle(color: Colors.redAccent),
+                      )
+                    ],
+                  ),
+                )
+              ],
+            ),
+          ))));
+
 }

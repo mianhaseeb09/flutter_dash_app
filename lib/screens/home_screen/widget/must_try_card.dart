@@ -138,13 +138,13 @@ class MustTryCard extends StatelessWidget {
                             width: 60,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(6),
-                              color: Colors.orange,
+                              color: Colors.redAccent,
                             ),
                             child: const Center(
                                 child: Text(
                                   "6:45 PM",
                                   style: TextStyle(
-                                      color: Colors.white, fontWeight: FontWeight.bold),
+                                      color: Colors.white, ),
                                 )),
                           ),
                           const SizedBox(width: 5,),
@@ -153,13 +153,13 @@ class MustTryCard extends StatelessWidget {
                             width: 60,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(6),
-                              color: Colors.orange,
+                              color: Colors.redAccent,
                             ),
                             child: const Center(
                                 child: Text(
                                   "7:00 PM",
                                   style: TextStyle(
-                                      color: Colors.white, fontWeight: FontWeight.bold),
+                                      color: Colors.white, ),
                                 )),
                           ),
                           const SizedBox(width: 5,),
@@ -168,13 +168,13 @@ class MustTryCard extends StatelessWidget {
                             width: 60,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(6),
-                              color: Colors.orange,
+                              color: Colors.redAccent,
                             ),
                             child: const Center(
                                 child: Text(
                                   "7:45 PM",
                                   style: TextStyle(
-                                      color: Colors.white, fontWeight: FontWeight.bold),
+                                      color: Colors.white,),
                                 )),
                           ),
                         ],

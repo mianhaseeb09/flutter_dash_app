@@ -19,7 +19,7 @@ class CardScreen extends StatelessWidget {
               height: 130,
               width: 320,
               decoration: BoxDecoration(
-                  color: Colors.orange, borderRadius: BorderRadius.circular(20)),
+                  color: Color.fromRGBO(57, 81, 177, 1), borderRadius: BorderRadius.circular(20)),
               child: Row(
                 children: [
                   Padding(

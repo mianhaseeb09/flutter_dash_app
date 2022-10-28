@@ -64,7 +64,7 @@ class _AllergyInformationState extends State<AllergyInformation> {
                         padding: EdgeInsets.all(8.0),
                         child: CircleAvatar(
                           radius: 35,
-                          backgroundColor: Colors.orange,
+                          backgroundColor: Colors.redAccent,
                           child: Text(
                             "Fish",
                             style: TextStyle(color: Colors.white),
@@ -96,7 +96,7 @@ class _AllergyInformationState extends State<AllergyInformation> {
                         padding: EdgeInsets.fromLTRB(8.0, 8, 8, 8),
                         child: CircleAvatar(
                           radius: 37,
-                          backgroundColor: Colors.orange,
+                          backgroundColor: Colors.redAccent,
                           child: Text(
                             "Egg",
                             style: TextStyle(color: Colors.white),
@@ -139,7 +139,7 @@ class _AllergyInformationState extends State<AllergyInformation> {
                       padding: EdgeInsets.fromLTRB(8.0, 60, 8, 8),
                       child: CircleAvatar(
                         radius: 60,
-                        backgroundColor: Colors.orange,
+                        backgroundColor: Colors.redAccent,
                         child: Text(
                           "Molluse",
                           style: TextStyle(color: Colors.white),
@@ -180,7 +180,7 @@ class _AllergyInformationState extends State<AllergyInformation> {
                       padding: EdgeInsets.fromLTRB(8.0, 0, 8, 150),
                       child: CircleAvatar(
                         radius: 70,
-                        backgroundColor: Colors.orange,
+                        backgroundColor: Colors.redAccent,
                         child: Text(
                           "Mushroom",
                           style: TextStyle(color: Colors.white),
@@ -196,7 +196,7 @@ class _AllergyInformationState extends State<AllergyInformation> {
                         padding: EdgeInsets.all(8),
                         child: CircleAvatar(
                           radius: 35,
-                          backgroundColor: Colors.orange,
+                          backgroundColor: Colors.redAccent,
                           child: Text(
                             "Sugar",
                             style: TextStyle(color: Colors.white),
@@ -207,9 +207,9 @@ class _AllergyInformationState extends State<AllergyInformation> {
                         padding: EdgeInsets.all(8),
                         child: CircleAvatar(
                           radius: 35,
-                          backgroundColor: Colors.orange,
+                          backgroundColor: Colors.redAccent,
                           child: Text(
-                            "Transfat",
+                            "Transfer",
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
@@ -243,7 +243,7 @@ class _AllergyInformationState extends State<AllergyInformation> {
                     Text(
                       "Load More",
                       style: TextStyle(
-                        color: Colors.orange,
+                        color: Colors.redAccent,
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                         decoration: TextDecoration.underline,
@@ -270,7 +270,7 @@ class _AllergyInformationState extends State<AllergyInformation> {
                           );
                         },
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.orangeAccent,
+                          backgroundColor: Colors.redAccent,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
                           ),

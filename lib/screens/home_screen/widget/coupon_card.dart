@@ -25,7 +25,7 @@ class CoupanCard extends StatelessWidget {
                         height: 163,
                         width: 284,
                         decoration: BoxDecoration(
-                          color: Colors.orange,
+                          color: Colors.redAccent,
                           borderRadius: BorderRadius.circular(21),
                         ),
                       )),

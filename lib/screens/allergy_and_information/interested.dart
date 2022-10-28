@@ -63,7 +63,7 @@ class _InterestedThingState extends State<InterestedThing> {
                       padding: EdgeInsets.all(8.0),
                       child: CircleAvatar(
                         radius: 35,
-                        backgroundColor: Colors.orange,
+                        backgroundColor: Colors.redAccent,
                         child: Text(
                           "Pizza",
                           style: TextStyle(color: Colors.white),
@@ -95,7 +95,7 @@ class _InterestedThingState extends State<InterestedThing> {
                       padding: EdgeInsets.fromLTRB(8.0, 8, 8, 8),
                       child: CircleAvatar(
                         radius: 37,
-                        backgroundColor: Colors.orange,
+                        backgroundColor: Colors.redAccent,
                         child: Text(
                           "Veg",
                           style: TextStyle(color: Colors.white),
@@ -137,7 +137,7 @@ class _InterestedThingState extends State<InterestedThing> {
                       padding: EdgeInsets.fromLTRB(8.0, 60, 8, 8),
                       child: CircleAvatar(
                         radius: 60,
-                        backgroundColor: Colors.orange,
+                        backgroundColor: Colors.redAccent,
                         child: Text(
                           "Italian",
                           style: TextStyle(color: Colors.white),
@@ -178,7 +178,7 @@ class _InterestedThingState extends State<InterestedThing> {
                       padding: EdgeInsets.fromLTRB(8.0, 0, 8, 150),
                       child: CircleAvatar(
                         radius: 70,
-                        backgroundColor: Colors.orange,
+                        backgroundColor: Colors.redAccent,
                         child: Text(
                           "Mexican",
                           style: TextStyle(color: Colors.white),
@@ -194,7 +194,7 @@ class _InterestedThingState extends State<InterestedThing> {
                         padding: EdgeInsets.all(8),
                         child: CircleAvatar(
                           radius: 35,
-                          backgroundColor: Colors.orange,
+                          backgroundColor: Colors.redAccent,
                           child: Text(
                             "Wine",
                             style: TextStyle(color: Colors.white),
@@ -205,7 +205,7 @@ class _InterestedThingState extends State<InterestedThing> {
                         padding: EdgeInsets.all(8),
                         child: CircleAvatar(
                           radius: 35,
-                          backgroundColor: Colors.orange,
+                          backgroundColor: Colors.redAccent,
                           child: Text(
                             "Indian",
                             style: TextStyle(color: Colors.white),
@@ -242,7 +242,7 @@ class _InterestedThingState extends State<InterestedThing> {
                     Text(
                       "Load More",
                       style: TextStyle(
-                        color: Colors.orange,
+                        color: Colors.redAccent,
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                         decoration: TextDecoration.underline,
@@ -269,7 +269,7 @@ class _InterestedThingState extends State<InterestedThing> {
                               ));
                         },
                         style: ElevatedButton.styleFrom(
-                          primary: Colors.orangeAccent,
+                          backgroundColor: Colors.redAccent,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
                           ),
